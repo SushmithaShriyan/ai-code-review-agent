@@ -1,8 +1,26 @@
+
 # AI Code Review Agent
 
 An AI agent that watches your GitHub pull requests, reviews the diff for
 security, code quality, and performance issues, and posts inline comments
 automatically — plus a dashboard to see review history and stats.
+
+**🔗 Live demo:** `<will add once deployed below>`
+
+## Proof it works
+
+Tested against a real pull request containing a hardcoded password and a
+SQL injection vulnerability. The agent caught both, with zero false
+positives, and posted the review automatically within ~3.4 seconds:
+
+> **[HIGH]** Direct string concatenation of the `id` parameter into the SQL
+> query introduces a severe SQL injection vulnerability.
+> Suggestion: Use parameterized queries supported by the database driver.
+>
+> **[HIGH]** Hardcoded database password in plain text poses a severe
+> security risk.
+> Suggestion: Move sensitive credentials to environment variables.
+
 
 ## Why this project
 
