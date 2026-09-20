@@ -5,7 +5,7 @@ An AI agent that watches your GitHub pull requests, reviews the diff for
 security, code quality, and performance issues, and posts inline comments
 automatically — plus a dashboard to see review history and stats.
 
-**🔗 Live demo:** `<will add once deployed below>`
+**🔗 Live demo:** 'https://ai-code-review-agent-ruby.vercel.app'
 
 ## Proof it works
 
@@ -109,6 +109,8 @@ ai-code-review-agent/
 5. Visit `http://localhost:8000/docs` — FastAPI's auto-generated Swagger UI.
    You can test `/reviews` and `/reviews/stats` immediately even with an
    empty database (they'll return empty results).
+
+     Backend API: https://ai-code-review-agent-production-0b45.up.railway.app
 
 ## Setup — Frontend
 
